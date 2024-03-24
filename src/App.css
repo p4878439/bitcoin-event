@@ -1,0 +1,68 @@
+.App {
+  background-image: url('./assets/back.png');
+  /* Дополнительные стили */
+  background-size: cover; /* Масштабируем изображение до размеров элемента */
+  background-repeat: no-repeat; /* Запретить повторение изображения */
+  margin: 0px;
+  padding: 0px;
+}
+
+.Header {
+
+}
+
+.Title {
+  font-size: 56px;
+  margin-left: -40px;
+   color: white;
+}
+
+.Logo {
+  width: 200px;
+  height: 200px;
+}
+
+.Buttons {
+  display: flex;
+  gap: 20px;
+}
+
+@media screen and (max-width: 790px) {
+  .Title {
+    font-size: 46px;
+    margin-left: -25px;
+  }
+  .Logo {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+.About {
+  font-size: 30px;
+}
+
+@media screen and (max-width: 790px) {
+  .Title {
+    font-size: 25px;
+  }
+  .Buttons {
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .About {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .Title {
+    font-size: 20px;
+    margin-left: -15px;
+  }
+  .Logo {
+    width: 100px;
+    height: 100px;
+  }
+}
