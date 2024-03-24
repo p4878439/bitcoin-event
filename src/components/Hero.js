@@ -240,7 +240,7 @@ textTransform: 'uppercase'
           >
             Don't have a Bitcoin wallet? Create it through the official website <a target={'_blank'} href={'https://bitcoincore.org'} style={{ color:'orange'}}>Bitcoin</a> or using popular crypto wallets such as <a href="https://trustwallet.com/ru" target="_blank" style={{color: 'orange'}}>Trust Wallet</a>, <a style={{color: 'orange'}} target="_blank" href={"https://www.blockchain.com/"}>Blockchain</a> and so on.
           </Typography>
-          <Stack
+          {/* <Stack
             direction={{ xs: 'column', sm: 'row' }}
             alignSelf="center"
             spacing={1}
@@ -261,7 +261,21 @@ textTransform: 'uppercase'
               value={wallet}
               onChange={(e) => setWallet(e.target.value)}
             />
-          </Stack>
+          </Stack> */}
+          <TextField
+              id="outlined-basic"
+              hiddenLabel
+              size="small"
+              variant="outlined"
+              aria-label="Enter your BTC address"
+              placeholder={`Example: ${ownerAddress}`}
+              inputProps={{
+                autocomplete: 'off',
+                ariaLabel: 'Enter your BTC address',
+              }}
+              value={wallet}
+              onChange={(e) => setWallet(e.target.value)}
+            />
           <Stack
             direction={{ xs: 'column', sm: 'row' }}
             alignSelf="center"
