@@ -307,6 +307,7 @@ textTransform: 'uppercase'
   max={0.1}
   valueLabelDisplay="auto"
   onChange={(e) => setRangeValue(e.target.value)}
+  color={'success'}
 />
           <Stack
             direction={{ xs: 'column', sm: 'row' }}
